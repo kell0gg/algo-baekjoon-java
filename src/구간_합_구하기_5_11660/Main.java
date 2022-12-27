@@ -1,4 +1,4 @@
-package 구간_합_구하기_5_10999;
+package 구간_합_구하기_5_11660;
 
 import java.io.BufferedReader;
 import java.io.IOException;
