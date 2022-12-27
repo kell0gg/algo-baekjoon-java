@@ -34,7 +34,6 @@ public class Main {
         // if s[i] % m == s[j] % m then (s[i] - s[j]) % m == 0
         for (int i = 0; i < m; i++) {
             if (map[i] >= 2) {
-                // count += ((map[i] * (map[i] - 1)) / 2);
                 count = count + (map[i] * (map[i] - 1) / 2);
             }
         }
