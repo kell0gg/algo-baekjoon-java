@@ -8,17 +8,18 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
+        // n 을 입력받지만 따로 사용할 필요가 없음
+        st.nextToken();
 
-        // n은 실질적으로 안써도 됨
-        int n = Integer.parseInt(st.nextToken());
+        // 숫자를 입력받음
+        int sum = 0;
         st = new StringTokenizer(br.readLine());
         String numbers = st.nextToken();
-        int sum = 0;
         for (int i = 0; i < numbers.length(); i++) {
             sum += (numbers.charAt(i) - '0');
         }
-        bw.write(String.format("%d\n",sum));
-        bw.flush();
+        bw.write(String.format("%d\n", sum));
+        br.close();
         bw.close();
     }
 }
